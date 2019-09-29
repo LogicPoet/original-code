@@ -31,6 +31,11 @@ import java.util.Scanner;
  * @author LogicPoet
  * @version V1.0
  * @date 2019/09/28 11:41
+ *
+ * 总分15
+ *
+ * 完成时间：1:30:00
+ * 得分12
  **/
 public class PAT_1061 {
 
