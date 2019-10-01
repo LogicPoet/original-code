@@ -3,7 +3,6 @@ package pat_basic_level;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Arrays;
 
 /**
  * <p>Title: PAT_1056</p>
