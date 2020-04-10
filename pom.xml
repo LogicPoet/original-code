@@ -6,8 +6,13 @@
 
     <groupId>com.cat</groupId>
     <artifactId>original-code</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
+
+    <modules>
+        <module>PAT_Practice</module>
+        <module>java-se</module>
+    </modules>
 
     <properties>
         <!--项目版本-->
