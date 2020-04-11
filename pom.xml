@@ -12,6 +12,7 @@
     <modules>
         <module>PAT_Practice</module>
         <module>java-se</module>
+        <module>data-structure</module>
     </modules>
 
     <properties>
@@ -79,12 +80,6 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <scope>provided</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>com.google.guava</groupId>
-            <artifactId>guava</artifactId>
             <scope>provided</scope>
         </dependency>
     </dependencies>
