@@ -1,10 +1,7 @@
 
-package com.cat.annotation;
+package com.cat.annotation.simple;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Set;
+import com.cat.annotation.simple.MetaAnnotation;
 
 /**
  * <p>Title: TestMeta</p>

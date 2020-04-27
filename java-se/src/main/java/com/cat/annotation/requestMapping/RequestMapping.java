@@ -1,4 +1,4 @@
-package com.cat.annotation;
+package com.cat.annotation.requestMapping;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

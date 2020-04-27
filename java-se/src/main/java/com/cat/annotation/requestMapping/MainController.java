@@ -1,4 +1,4 @@
-package com.cat.annotation;
+package com.cat.annotation.requestMapping;
 
 /**
  * <p>Title: MainController</p>

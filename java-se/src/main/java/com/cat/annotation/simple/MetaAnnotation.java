@@ -1,4 +1,4 @@
-package com.cat.annotation;
+package com.cat.annotation.simple;
 
 
 import java.lang.annotation.*;
