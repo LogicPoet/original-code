@@ -14,6 +14,8 @@
         <module>java-se</module>
         <module>data-structure</module>
         <module>webflux</module>
+        <module>websocket-test</module>
+        <module>elasticsearch</module>
     </modules>
 
     <properties>
