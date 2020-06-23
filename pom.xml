@@ -16,6 +16,7 @@
         <module>webflux</module>
         <module>websocket-test</module>
         <module>elasticsearch</module>
+        <module>jvm-demo</module>
     </modules>
 
     <properties>
@@ -78,14 +79,6 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-
-    <dependencies>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <scope>provided</scope>
-        </dependency>
-    </dependencies>
 
     <!--构建配置-->
     <build>
