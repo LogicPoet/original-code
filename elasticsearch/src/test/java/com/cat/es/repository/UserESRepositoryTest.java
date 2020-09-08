@@ -25,6 +25,11 @@ public class UserESRepositoryTest {
     @Autowired
     UserESRepository repo;
 
+    @Test
+    public void addIndex(){
+        //repo.save();
+    }
+
     /**
      * 测试普通查询，按生日倒序
      */

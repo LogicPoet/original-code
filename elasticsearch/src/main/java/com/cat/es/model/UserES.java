@@ -25,7 +25,7 @@ import java.util.Date;
 @ToString
 @NoArgsConstructor
 @AllArgsConstructor
-@Document(indexName = "maiun_cloud",type = "blade_user", shards = 1,replicas = 0)
+@Document(indexName = "maiun_test",type = "blade_user", shards = 1,replicas = 0)
 public class UserES {
 
 	/**

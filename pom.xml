@@ -17,6 +17,9 @@
         <module>websocket-test</module>
         <module>elasticsearch</module>
         <module>jvm-demo</module>
+        <module>springboot-event-driven-demo</module>
+        <module>springboot-hadoop-demo</module>
+        <module>weigth</module>
     </modules>
 
     <properties>
