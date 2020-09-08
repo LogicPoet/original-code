@@ -20,6 +20,7 @@
         <module>springboot-event-driven-demo</module>
         <module>springboot-hadoop-demo</module>
         <module>weigth</module>
+        <module>spring-boot-demo-neo4j</module>
     </modules>
 
     <properties>
