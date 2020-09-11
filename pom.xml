@@ -21,6 +21,7 @@
         <module>springboot-hadoop-demo</module>
         <module>weigth</module>
         <module>spring-boot-demo-neo4j</module>
+        <module>reactor-demo</module>
     </modules>
 
     <properties>
@@ -78,6 +79,13 @@
                 <groupId>io.spring.platform</groupId>
                 <artifactId>platform-bom</artifactId>
                 <version>${spring.platform.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>io.projectreactor</groupId>
+                <artifactId>reactor-bom</artifactId>
+                <version>Bismuth-RELEASE</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
