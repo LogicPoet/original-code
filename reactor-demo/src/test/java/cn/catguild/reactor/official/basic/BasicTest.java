@@ -12,6 +12,7 @@ import java.io.OutputStream;
 import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
+import java.util.stream.Stream;
 
 /**
  * 创建flux或mono并订阅的简单方法
@@ -26,10 +27,20 @@ public class BasicTest {
      */
     @Test
     public void createTest() {
+        // 最基本的
         Flux<String> seq1 = Flux.just("foo", "bar", "foobar");
 
-        List<String> iterable = Arrays.asList("foo", "bar", "foobar");
-        Flux<String> seq2 = Flux.fromIterable(iterable);
+        // 数组
+        String[] array = {"foo", "bar", "foobar"};
+        Flux<String> seq2 = Flux.fromArray(array);
+
+        // 集合
+        List<String> iterable = Arrays.asList(array);
+        Flux<String> seq3 = Flux.fromIterable(iterable);
+
+        // stream流
+        Stream<String> stream = iterable.stream();
+        Flux<String> seq4 = Flux.fromStream(stream);
 
         // =============================================================
         // Notice the factory method honors the generic type even though it has no value.
