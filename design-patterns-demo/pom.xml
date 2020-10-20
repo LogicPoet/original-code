@@ -13,6 +13,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>demo-01-00</module>
+        <module>demo-13-00</module>
     </modules>
 
     <dependencies>
