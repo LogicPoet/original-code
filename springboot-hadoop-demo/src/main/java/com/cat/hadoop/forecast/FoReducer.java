@@ -2,7 +2,7 @@ package com.cat.hadoop.forecast;
 
 import com.cat.hadoop.weigth.Feature;
 import com.cat.hadoop.weigth.Instance;
-import javafx.util.Pair;
+//import javafx.util.Pair;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.hadoop.io.DoubleWritable;
 import org.apache.hadoop.io.IntWritable;
@@ -105,7 +105,7 @@ public class FoReducer extends Reducer<IntWritable, IntWritable, Text, DoubleWri
      */
     @Override
     protected void reduce(IntWritable key, Iterable<IntWritable> values, Context context) throws IOException, InterruptedException {
-        predict(new ArrayList<>());
+        //predict(new ArrayList<>());
     }
 
     /**
@@ -156,29 +156,33 @@ public class FoReducer extends Reducer<IntWritable, IntWritable, Text, DoubleWri
                     featureCountList.put(result + "-" + segs[i], sum + 1);
                 }
             }
-            if (fieldList.size() > C) C = fieldList.size();
+            if (fieldList.size() > C) {
+                C = fieldList.size();
+            }
             Instance instance = new Instance(result, fieldList);
             instanceList.add(instance);
-            if (labels.indexOf(result) == -1) labels.add(result);
+            if (labels.indexOf(result) == -1) {
+                labels.add(result);
+            }
             line = br.readLine();
         }
     }
 
-    /**
-     * 预测类别
-     *
-     * @param fieldList
-     * @return
-     */
-    public Pair<String, Double>[] predict(List<String> fieldList) {
-        double[] prob = calProb(fieldList);
-        Pair<String, Double>[] pairResult = new Pair[prob.length];
-        for (int i = 0; i < prob.length; ++i) {
-            pairResult[i] = new Pair<>(labels.get(i), prob[i]);
-        }
-
-        return pairResult;
-    }
+    ///**
+    // * 预测类别
+    // *
+    // * @param fieldList
+    // * @return
+    // */
+    //public Pair<String, Double>[] predict(List<String> fieldList) {
+    //    double[] prob = calProb(fieldList);
+    //    Pair<String, Double>[] pairResult = new Pair[prob.length];
+    //    for (int i = 0; i < prob.length; ++i) {
+    //        pairResult[i] = new Pair<>(labels.get(i), prob[i]);
+    //    }
+    //
+    //    return pairResult;
+    //}
 
     /**
      * 计算p(y|x),此时的x指的是instance里的field
