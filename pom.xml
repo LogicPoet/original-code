@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.cat</groupId>
+    <groupId>cn.catguild</groupId>
     <artifactId>original-code</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
@@ -17,6 +17,13 @@
         <module>websocket-test</module>
         <module>elasticsearch</module>
         <module>jvm-demo</module>
+        <module>math-calc-demo</module>
+        <module>springboot-event-driven-demo</module>
+        <module>springboot-hadoop-demo</module>
+        <module>weigth</module>
+        <module>spring-boot-demo-neo4j</module>
+        <module>reactor-demo</module>
+        <module>design-patterns-demo</module>
     </modules>
 
     <properties>
@@ -74,6 +81,13 @@
                 <groupId>io.spring.platform</groupId>
                 <artifactId>platform-bom</artifactId>
                 <version>${spring.platform.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>io.projectreactor</groupId>
+                <artifactId>reactor-bom</artifactId>
+                <version>Bismuth-RELEASE</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
