@@ -25,6 +25,7 @@
         <module>reactor-demo</module>
         <module>design-patterns-demo</module>
         <module>netty-demo</module>
+        <module>computer-file-demo</module>
     </modules>
 
     <properties>
