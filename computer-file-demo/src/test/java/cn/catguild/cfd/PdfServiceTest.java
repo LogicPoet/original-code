@@ -54,4 +54,18 @@ public class PdfServiceTest {
         log.debug("分离行：{}",line);
         log.debug("-----------------------------------------------------------");
     }
+
+    @Test
+    public void testPage() throws IOException {
+        // 按页码提取内容
+        PdfReader reader = new PdfReader(path);
+        PdfReaderContentParser parser = new PdfReaderContentParser(reader);
+        TextExtractionStrategy strategy = parser.processContent(21, new SimpleTextExtractionStrategy());
+        String resultantText = strategy.getResultantText();
+        log.debug(resultantText);
+        //String[] split = resultantText.split("\n");
+        //List<String> line = new LinkedList<>(Arrays.asList(split));
+        //log.debug("分离行：{}",line);
+        //log.debug("-----------------------------------------------------------");
+    }
 }
