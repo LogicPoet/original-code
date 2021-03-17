@@ -22,23 +22,23 @@ public class SinglyLinkedListInversion {
      * 利用迭代思想 反转整个单链表
      */
     private static ListNode reverse(ListNode head){
+        if (null == head || null == head.next){
+            return head;
+        }
         // 当前节点指针
         ListNode p;
-        ListNode p2;
+        ListNode p_temp;
+        ListNode new_head;
+        p = head;
+        new_head = null;
 
-        p = head.next;
-        head.next = null;
-        p2 = p.next;
-        p.next = head;
-        while (head.next != null){
-            // 保留原来节点的指针
-
-            // 头指针往后移
-            //new_head = head.next;
-
+        while (null != p){
+            p_temp = p.next;
+            p.next = new_head;
+            new_head = p;
+            p = p_temp;
         }
-
-        return p;
+        return new_head;
     }
     //=========================================================
 
