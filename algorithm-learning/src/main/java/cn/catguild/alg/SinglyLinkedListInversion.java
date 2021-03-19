@@ -3,6 +3,7 @@ package cn.catguild.alg;
 /**
  * 单链表反转
  *
+ *
  * @author liu.zhi
  * @date 2021/3/16 14:07
  */
@@ -69,7 +70,9 @@ public class SinglyLinkedListInversion {
             return head;
         }
 
+        // 不停的递归，head.next 会逐步靠近 null
         ListNode last = reverse(head.next);
+        // 完成 第一次递归 后的后续操作
         head.next.next = head;
         head.next = null;
 
