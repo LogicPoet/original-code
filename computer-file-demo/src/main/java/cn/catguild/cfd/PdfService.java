@@ -96,7 +96,7 @@ public class PdfService {
         List<String> result = new ArrayList<>();
         try {
             PdfReader reader = new PdfReader(path);
-            List list = SimpleBookmark.getBookmark(reader);
+            List<HashMap<String, Object>> list = SimpleBookmark.getBookmark(reader);
             for (Iterator i = list.iterator(); i.hasNext(); ) {
                 showBookmark((Map) i.next());
             }
@@ -108,6 +108,7 @@ public class PdfService {
 
     private static void showBookmark(Map bookmark) {
         System.out.println(bookmark.get("Title"));
+        System.out.println(bookmark);
         ArrayList kids = (ArrayList) bookmark.get("Kids");
         if (kids == null)
             return;

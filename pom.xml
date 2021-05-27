@@ -27,6 +27,8 @@
         <module>netty-demo</module>
         <module>computer-file-demo</module>
         <module>spark-demo</module>
+        <module>dynamic-datasource</module>
+        <module>algorithm-learning</module>
         <module>example-demo</module>
     </modules>
 

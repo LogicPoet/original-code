@@ -1,0 +1,13 @@
+# database
+spring:
+  datasource:
+    db1:
+      jdbc-url: jdbc:postgresql://127.0.0.127:5432/shjj-system-dev
+      username: postgres
+      password: postgres
+      driver-class-name: org.postgresql.Driver
+    db2:
+      jdbc-url: jdbc:postgresql://127.0.0.127:5432/szjj_base_platform_dev
+      username: postgres
+      password: postgres
+      driver-class-name: org.postgresql.Driver
